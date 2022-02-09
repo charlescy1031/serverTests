@@ -2,9 +2,9 @@
  * @Author: Cuiyuan
  * @Date: 2022-02-07 10:44:45
  * @LastEditors: Cuiyuan
- * @LastEditTime: 2022-02-07 18:58:46
+ * @LastEditTime: 2022-02-09 14:51:20
  * @Description: file content
- * @FilePath: /servertest/puppeteer/dsadsdas.ts
+ * @FilePath: /serverTests/puppeteer/main.ts
  */
 import * as puppeteer from "puppeteer";
 //import mongo from '../lib/mongoDB';
@@ -117,7 +117,7 @@ async function main() {
         return writeDataList;
       });
       // 得到的数据写入mongodb
-      const result = await mongo.insertMany();
+     // const result = await mongo.insertMany();
       log(chalk.yellow("写入数据库完毕"));
     }
   } catch (error) {
